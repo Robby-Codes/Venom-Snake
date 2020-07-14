@@ -32,12 +32,12 @@ body {
 }
 
 .nav-container > a {
-    color: #26262a;
+    color: white;
     text-decoration: none;
 }
 
 .nav-container div > a {
-    color: #2d2d31;
+    color: white;
     font-size: 0.8em;
     text-decoration: none;
     padding: 0 10px;
@@ -303,5 +303,4 @@ footer {
     background-image: url("https://wallpaperplay.com/walls/full/0/8/c/176624.jpg");
     position: fixed;
     z-index: 999;
-    display: none;
 }
