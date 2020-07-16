@@ -15,7 +15,6 @@ const qSupportLevel = document.getElementsByClassName('q-support-level');
 const qIntelLevel = document.getElementsByClassName('q-intel-level');
 const qMedicalLevel = document.getElementsByClassName('q-medical-level');
 
-
 onload = moveCover;
 aboutButton.addEventListener("mouseover", buttonAnimation1);
 aboutButton.addEventListener("mouseout", buttonAnimation2);
@@ -37,6 +36,7 @@ qStatsIntoView(qMedicalLevel);
 document.getElementsByClassName("about-link")[0].addEventListener('click', aboutSmoothScroll);;
 document.getElementsByClassName("skills-link")[0].addEventListener('click', skillsSmoothScroll);;
 document.getElementsByClassName("partner-link")[0].addEventListener('click', partnerSmoothScroll);;
+document.getElementById('about-btn').addEventListener('click', aboutSmoothScroll);
 
 function aboutSmoothScroll () {
     document.getElementById("about-section").scrollIntoView({behavior: 'smooth', block: 'center'});

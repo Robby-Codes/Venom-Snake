@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    color: #3fc1b1;
+}
+
 /* Navigation Bar */
 
 .navigation {
@@ -293,7 +297,7 @@ footer {
     height: 10vh;
     background-color: #19181a;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 /* Cover Section */
@@ -302,6 +306,8 @@ footer {
     height: 100%;
     width: 100%;
     background-image: url("https://wallpaperplay.com/walls/full/0/8/c/176624.jpg");
+    background-size: cover;
+    background-position: center;
     position: fixed;
     z-index: 999;
 }
