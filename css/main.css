@@ -37,6 +37,7 @@ body {
 }
 
 .nav-container div > a {
+    cursor: pointer;
     color: white;
     font-size: 0.8em;
     text-decoration: none;
@@ -191,7 +192,7 @@ body {
 .bd-level, .support-level,
 .intel-level, .medical-level {
     height: 100%;
-    width: 70%;
+    width: 5%;
     background-color: #3fc1b1;
     border: 2px solid #26262a;
     border-radius: 10px;
@@ -252,7 +253,7 @@ body {
 
 .q-combat-level, .q-intel-level {
     height: 100%;
-    width: 70%;
+    width: 5%;
     background-color: #3fc1b1;
     border: 2px solid #26262a;
     border-radius: 10px;
@@ -260,7 +261,7 @@ body {
 
 .q-rd-level, .q-medical-level {
     height: 100%;
-    width: 20%;
+    width: 5%;
     background-color: #3fc1b1;
     border: 2px solid #26262a;
     border-radius: 10px;
@@ -268,7 +269,7 @@ body {
 
 .q-bd-level {
     height: 100%;
-    width: 10%;
+    width: 5%;
     background-color: #3fc1b1;
     border: 2px solid #26262a;
     border-radius: 10px;
@@ -276,7 +277,7 @@ body {
 
 .q-support-level {
     height: 100%;
-    width: 30%;
+    width: 5%;
     background-color: #3fc1b1;
     border: 2px solid #26262a;
     border-radius: 10px;
