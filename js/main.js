@@ -33,9 +33,9 @@ qStatsIntoView(qSupportLevel);
 qStatsIntoView(qIntelLevel);
 qStatsIntoView(qMedicalLevel);
 
-document.getElementsByClassName("about-link")[0].addEventListener('click', aboutSmoothScroll);;
-document.getElementsByClassName("skills-link")[0].addEventListener('click', skillsSmoothScroll);;
-document.getElementsByClassName("partner-link")[0].addEventListener('click', partnerSmoothScroll);;
+document.getElementsByClassName("about-link")[0].addEventListener('click', aboutSmoothScroll);
+document.getElementsByClassName("skills-link")[0].addEventListener('click', skillsSmoothScroll);
+document.getElementsByClassName("partner-link")[0].addEventListener('click', partnerSmoothScroll);
 document.getElementById('about-btn').addEventListener('click', aboutSmoothScroll);
 
 function aboutSmoothScroll () {
