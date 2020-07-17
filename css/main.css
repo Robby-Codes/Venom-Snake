@@ -312,8 +312,8 @@ footer {
     z-index: 999;
 }
 
-/* Changing sizes for phone users (port-view) */
-@media screen and (max-width: 360px) {
+/* Changing sizes for phone users (Portrait View) */
+@media screen and (min-width: 360px) and (max-width: 480px) {
 
     /* Navigation Section Changes */
 
@@ -471,5 +471,174 @@ footer {
 
     footer {
         padding: 25px;
+    }
+}
+
+
+/* Changing sizes for phone users (Landscape View) */
+@media screen and (min-width: 640px) and (max-width: 840px) {
+
+    /* Navigation Section Changes */
+
+    .nav-container > a {
+        font-size: 0.8em;
+    }
+    
+    .nav-container div > a {
+        font-size: 0.6em;
+        padding: 0 8px;
+    }
+
+    /* Banner Section Changes */
+
+    .banner-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .banner-container h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .banner-container h3 {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .banner-container button {
+        font-size: 0.7em;
+        height: 30px;
+        width: 50px;
+        margin-top: 20px;
+        float: left;
+    }
+
+    #banner-section img {
+        width: auto;
+        height: 15em;
+    }
+
+    /* About Section Changes */
+
+    #about-section {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #about-section h1 {
+        font-size: 5em;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .about-content {
+        width: 90%;
+        position: static;
+        box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a, 0 10px 10px #19181a;
+    }
+
+    .about-content p{
+        font-size: 0.8em;
+        padding-bottom: 20px;
+    }
+
+    .dot-container {
+        display: none;
+    }
+
+    /* Skills Section Changes */
+
+    #skills-section {
+        height: auto;
+    }
+
+    #skills-section > h1 {
+        font-size: 5em;
+        align-self: flex-start;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #skills-section > p {
+        font-size: 0.8em;
+        width: 80%;
+    }
+
+    .skills-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #skills-section img, #partners-section img {
+        height: auto;
+        width: 8em;
+        align-self: center;
+        margin-bottom: 30px;
+        margin-right: 20px;
+    }
+
+    .skills {
+        width: 90%;
+        align-self: center
+    }
+
+    .skills div {
+        margin-bottom: 12px;
+    }
+    
+    .skill-type {
+        font-size: 0.7em;
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .skills .skill-bar {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    /* Partner Section Changes */
+
+    #partners-section {
+        height: auto;
+    }
+
+    #partners-section h1 {
+        font-size: 5em;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #partners-section > p {
+        width: 80%;
+    }
+
+    .q-skills-container {
+        width: 90%;
+        flex-direction: row;
+    }
+    
+    .q-skills {
+        width: 90%;
+        align-self: center;
+    }
+    
+    .q-skills div {
+        margin-bottom: 12px;
+    }
+
+    .q-skills .q-skill-bar {
+        width: 100%;
+    }
+
+    /* Footer Changes */
+
+    footer {
+        padding: 10px;
     }
 }
