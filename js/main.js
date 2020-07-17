@@ -39,13 +39,13 @@ document.getElementsByClassName("partner-link")[0].addEventListener('click', par
 document.getElementById('about-btn').addEventListener('click', aboutSmoothScroll);
 
 function aboutSmoothScroll () {
-    document.getElementById("about-section").scrollIntoView({behavior: 'smooth', block: 'center'});
+    document.getElementById("about-section").scrollIntoView({behavior: 'smooth'});
 }
 function skillsSmoothScroll () {
-    document.getElementById("skills-section").scrollIntoView({behavior: 'smooth', block: 'center'});
+    document.getElementById("skills-section").scrollIntoView({behavior: 'smooth'});
 }
 function partnerSmoothScroll () {
-    document.getElementById("partners-section").scrollIntoView({behavior: 'smooth', block: 'center'});
+    document.getElementById("partners-section").scrollIntoView({behavior: 'smooth'});
 }
 
 function moveCover () {
