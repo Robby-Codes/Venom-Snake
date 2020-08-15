@@ -83,6 +83,7 @@ body {
     background-color: transparent;
     border: 2px solid #dc626a;
     margin-top: 30px;
+    outline: none;
 }
 
 .banner-container img {
@@ -313,7 +314,7 @@ footer {
 }
 
 /* Changing sizes for phone users (Portrait View) */
-@media screen and (min-width: 330px) and (max-width: 480px) {
+@media screen and (min-width: 250px) and (max-width: 500px) {
 
     /* Navigation Section Changes */
 
@@ -476,7 +477,7 @@ footer {
 
 
 /* Changing sizes for phone users (Landscape View) */
-@media screen and (min-width: 600px) and (max-width: 840px) {
+@media screen and (min-width: 501px) and (max-width: 840px) {
 
     /* Navigation Section Changes */
 

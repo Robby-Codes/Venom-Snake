@@ -74,6 +74,9 @@ function vsStatsIntoView (element) {
             if (position - windowHeight <= 0) {
                 elem.style.transition = "all 2s";
                 elem.style.width = "70%";
+            }  else if (position - windowHeight > 0) {
+                elem.style.transition = "all 2s";
+                elem.style.width = "5%";
             }
         }
     });
@@ -101,6 +104,21 @@ function qStatsIntoView (element) {
                         break;
                     case document.getElementsByClassName('q-support-level')[0]:
                         elem.style.width = "30%";
+                        break;
+                    default:
+                        alert('something went wrong');
+                        break;
+                }
+            }  else if (position - windowHeight > 0) {
+                elem.style.transition = "all 2s";
+                switch (elem) {
+                    case document.getElementsByClassName('q-combat-level')[0]:
+                    case document.getElementsByClassName('q-intel-level')[0]:
+                    case document.getElementsByClassName('q-rd-level')[0]:
+                    case document.getElementsByClassName('q-medical-level')[0]:
+                    case document.getElementsByClassName('q-bd-level')[0]:
+                    case document.getElementsByClassName('q-support-level')[0]:
+                        elem.style.width = "5%";
                         break;
                     default:
                         alert('something went wrong');
