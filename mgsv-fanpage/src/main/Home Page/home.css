@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.homepage-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../../assets/homebg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  left: 1%;
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+}
+
+.text-container h1:nth-of-type(1) {
+  color: #d61522;
+  font-size: 2em;
+  letter-spacing: 15px;
+  text-shadow: 1px 1px 1px black;
+  transform: rotateY(35deg);
+  position: relative;
+  top: 25px;
+  z-index: 2;
+}
+
+.text-container h1:nth-of-type(2) {
+  color: #dfdfdf;
+  font-size: 2.5em;
+  letter-spacing: 15px;
+  text-shadow: 1px 1px 1px black;
+  transform: rotateY(35deg);
+}
+
+.text-container h1:nth-of-type(3) {
+  color: #dfdfdf;
+  font-size: 0.8em;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px black;
+  transform: rotateY(35deg);
+}
+
+.text-container #vs-link > h1,
+.text-container #dd-link > h1 {
+  color: #dfdfdf;
+  font-size: 1em;
+  margin-top: 20px;
+  transform: rotateY(35deg);
+}
+
+.text-container a {
+  text-decoration: none;
+}
+
+.text-container a:hover {
+  color: #d61522;
+  text-decoration: underline;
+}
