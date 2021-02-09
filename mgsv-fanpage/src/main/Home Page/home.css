@@ -12,28 +12,48 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-image: url("../../assets/homebg2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .text-container {
-  text-align: center;
   position: absolute;
-  bottom: 50%;
-  left: 1%;
+  bottom: 45%;
+  left: 5%;
   transform: perspective(1000px);
   transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.text-container h1:nth-of-type(1) {
+.text-container > h1:nth-of-type(1) {
   color: #d61522;
-  font-size: 2em;
-  letter-spacing: 15px;
+  font-size: 2.17em;
+  letter-spacing: 12px;
   text-shadow: 1px 1px 1px black;
-  transform: rotateY(35deg);
+  transform: rotateY(35deg) rotate(1deg);
   position: relative;
   top: 25px;
+  left: 26px;
   z-index: 2;
 }
 
@@ -42,30 +62,156 @@
   font-size: 2.5em;
   letter-spacing: 15px;
   text-shadow: 1px 1px 1px black;
-  transform: rotateY(35deg);
+  transform: rotateY(35deg) rotate(1deg);
 }
 
 .text-container h1:nth-of-type(3) {
   color: #dfdfdf;
-  font-size: 0.8em;
-  letter-spacing: 10px;
+  font-size: 0.7em;
+  letter-spacing: 12px;
   text-shadow: 1px 1px 1px black;
-  transform: rotateY(35deg);
+  transform: rotateY(35deg) rotate(1deg);
+  margin-bottom: 30px;
 }
 
 .text-container #vs-link > h1,
 .text-container #dd-link > h1 {
   color: #dfdfdf;
   font-size: 1em;
-  margin-top: 20px;
-  transform: rotateY(35deg);
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px black;
+  transform: rotateY(35deg) rotate(2deg);
 }
 
 .text-container a {
   text-decoration: none;
+  margin-top: 30px;
 }
 
 .text-container a:hover {
   color: #d61522;
   text-decoration: underline;
+}
+
+small {
+  font-size: 0.65em;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/*Changes to phones screens (portrait)*/
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    height: 100%;
+    width: 100%;
+    bottom: auto;
+    left: auto;
+  }
+
+  .text-container > h1:nth-of-type(1) {
+    font-size: 0.7em;
+    letter-spacing: 5px;
+    top: 0;
+    left: 0;
+    transform: rotateY(0deg) rotate(0deg);
+  }
+
+  .text-container > h1:nth-of-type(2) {
+    font-size: 0.78em;
+    letter-spacing: 8px;
+    transform: rotateY(0deg) rotate(0deg);
+  }
+
+  .text-container > h1:nth-of-type(3) {
+    font-size: 0.4em;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    transform: rotateY(0deg) rotate(0deg);
+  }
+
+  .text-container #vs-link > h1,
+  .text-container #dd-link > h1 {
+    font-size: 0.6em;
+    letter-spacing: 5px;
+    transform: rotateY(0deg) rotate(0deg);
+  }
+
+  .text-container a {
+    margin-top: 20px;
+  }
+}
+
+/*Changes to phones screens (landscape)*/
+@media screen and (min-width: 501px) and (max-width: 764px) {
+  .text-container {
+    bottom: 35%;
+    left: 3%;
+  }
+
+  .text-container > h1:nth-of-type(1) {
+    font-size: 1em;
+    letter-spacing: 7px;
+    top: 10px;
+    left: 13px;
+  }
+
+  .text-container > h1:nth-of-type(2) {
+    font-size: 1.2em;
+    letter-spacing: 8px;
+  }
+
+  .text-container > h1:nth-of-type(3) {
+    font-size: 0.6em;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+
+  .text-container #vs-link > h1,
+  .text-container #dd-link > h1 {
+    font-size: 0.8em;
+    letter-spacing: 5px;
+  }
+
+  .text-container a {
+    margin-top: 30px;
+  }
+}
+
+/* Changes for intermediate screen sizes*/
+@media screen and (min-width: 765px) and (max-width: 1199px) {
+  .text-container {
+    left: 2%;
+  }
+
+  .text-container > h1:nth-of-type(1) {
+    font-size: 1.32em;
+    top: 15px;
+    left: 18px;
+  }
+
+  .text-container > h1:nth-of-type(2) {
+    font-size: 1.5em;
+  }
+
+  .text-container > h1:nth-of-type(3) {
+    font-size: 0.5em;
+  }
+
+  .text-container #vs-link > h1,
+  .text-container #dd-link > h1 {
+    font-size: 0.8em;
+  }
+}
+
+/* Changes for laptops and desktop screens*/
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+  /* No changes needed thus far */
 }
