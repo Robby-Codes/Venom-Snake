@@ -1,0 +1,487 @@
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  padding: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #19181a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d61522;
+  border-radius: 6px;
+  border: #26262a 1px solid;
+}
+
+/* Navigation Bar */
+
+.navigation {
+  width: 100%;
+  height: 8vh;
+  background-color: #19181a;
+  padding: 0 5%;
+  position: fixed;
+  z-index: 99;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container > div {
+  display: flex;
+}
+
+.nav-container > a {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+.nav-container div > a {
+  cursor: pointer;
+  color: #dfdfdf;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+/* Banner Section */
+
+#banner-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #26262a;
+  padding: 8vh 10px 10px 10px;
+  overflow: hidden;
+}
+
+.banner-container {
+  color: #dfdfdf;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner-container h1 {
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+
+.banner-container span {
+  color: #d61522;
+}
+
+.banner-container button {
+  cursor: pointer;
+  color: #d61522;
+  height: 50px;
+  width: 100px;
+  background-color: transparent;
+  border: 2px solid #d61522;
+  margin-top: 30px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.banner-container button:hover {
+  color: #dfdfdf;
+  background-color: #d61522;
+}
+
+.banner-container img {
+  height: 50%;
+  border: 10px solid #2d2d31;
+  border-radius: 50%;
+}
+
+/*About Section*/
+
+#about-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #26262a;
+  padding-top: 8vh;
+  overflow: hidden;
+}
+
+#about-section h1 {
+  color: #2d2d31;
+  font-size: 8em;
+  padding-left: 50px;
+}
+
+.about-content {
+  width: +90%;
+  background-color: #26262a;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a;
+  z-index: 1;
+}
+
+.about-content p {
+  color: #dfdfdf;
+  padding-bottom: 20px;
+}
+
+.dot-container {
+  height: 400px;
+  position: relative;
+  top: -350px;
+  left: 70%;
+}
+
+.dot-container img {
+  height: 100%;
+}
+
+/* Skills Section */
+
+#skills-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #26262a;
+  padding: 8vh 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#skills-section > h1 {
+  color: #2d2d31;
+  font-size: 8em;
+  padding-right: 50px;
+  align-self: flex-end;
+}
+
+#skills-section > p {
+  color: #dfdfdf;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills {
+  width: 60%;
+}
+
+.skills div {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.skill-type {
+  color: #dfdfdf;
+  font-size: 0.8em;
+  height: 25px;
+  width: 150px;
+  background-color: #0d6f9a;
+  padding: 5px;
+  margin-right: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.skills .skill-bar {
+  height: 20px;
+  width: 500px;
+  border: 2px solid #3fc1b1;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.combat-level,
+.rd-level,
+.bd-level,
+.support-level,
+.intel-level,
+.medical-level {
+  height: 100%;
+  width: 5%;
+  background-color: #3fc1b1;
+  border: 2px solid #26262a;
+  border-radius: 10px;
+}
+
+.rank {
+  color: gold;
+  font-weight: bold;
+  width: 50px;
+}
+
+/* Field Buddy Section */
+
+#field-buddy-section {
+  height: 100vh;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+/* Changing sizes for phone users (Portrait View) */
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  /* Navigation Section Changes */
+
+  .nav-container > a {
+    font-size: 0.7em;
+  }
+
+  .nav-container div > a {
+    font-size: 0.5em;
+    padding: 0 5px;
+  }
+
+  /* Banner Section Changes */
+
+  .banner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .banner-container h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .banner-container h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .banner-container button {
+    font-size: 0.7em;
+    height: 30px;
+    width: 50px;
+    margin-top: 20px;
+    float: right;
+  }
+
+  /* About Section Changes */
+
+  #about-section {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  #about-section h1 {
+    font-size: 5em;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    width: 90%;
+    position: static;
+    box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a,
+      0 10px 10px #19181a;
+  }
+
+  .about-content p {
+    font-size: 0.8em;
+    padding-bottom: 20px;
+  }
+
+  .dot-container {
+    display: none;
+  }
+
+  /* Skills Section Changes */
+
+  #skills-section {
+    height: auto;
+  }
+
+  #skills-section > h1 {
+    font-size: 5em;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  #skills-section > p {
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  .skills-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #skills-section img,
+  #partners-section img {
+    height: auto;
+    width: 10em;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .skills {
+    width: 90%;
+    align-self: center;
+  }
+
+  .skills div {
+    margin-bottom: 12px;
+  }
+
+  .skill-type {
+    font-size: 0.7em;
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .skills .skill-bar {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
+/* Changing sizes for phone users (Landscape View) */
+@media screen and (min-width: 501px) and (max-width: 840px) {
+  /* Navigation Section Changes */
+
+  .nav-container > a {
+    font-size: 0.8em;
+  }
+
+  .nav-container div > a {
+    font-size: 0.6em;
+    padding: 0 8px;
+  }
+
+  /* Banner Section Changes */
+
+  .banner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .banner-container h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .banner-container h3 {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .banner-container button {
+    font-size: 0.7em;
+    height: 30px;
+    width: 50px;
+    margin-top: 20px;
+    float: left;
+  }
+
+  #banner-section img {
+    width: auto;
+    height: 15em;
+  }
+
+  /* About Section Changes */
+
+  #about-section {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  #about-section h1 {
+    font-size: 5em;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    width: 90%;
+    position: static;
+    box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a,
+      0 10px 10px #19181a;
+  }
+
+  .about-content p {
+    font-size: 0.8em;
+    padding-bottom: 20px;
+  }
+
+  .dot-container {
+    display: none;
+  }
+
+  /* Skills Section Changes */
+
+  #skills-section {
+    height: auto;
+  }
+
+  #skills-section > h1 {
+    font-size: 5em;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  #skills-section > p {
+    font-size: 0.8em;
+    width: 80%;
+  }
+
+  .skills-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #skills-section img,
+  #partners-section img {
+    height: auto;
+    width: 8em;
+    align-self: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+
+  .skills {
+    width: 90%;
+    align-self: center;
+  }
+
+  .skills div {
+    margin-bottom: 12px;
+  }
+
+  .skill-type {
+    font-size: 0.7em;
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .skills .skill-bar {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
