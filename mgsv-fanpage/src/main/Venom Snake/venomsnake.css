@@ -171,6 +171,10 @@
   margin-bottom: 50px;
 }
 
+#skills-section .skills-container img {
+  height: 600px;
+}
+
 .skills-container {
   width: 80%;
   display: flex;
@@ -228,10 +232,140 @@
 /* Field Buddy Section */
 
 #field-buddy-section {
-  height: 100vh;
+  height: auto;
   width: 100%;
-
+  padding: 100px 0;
+  background-color: #26262a;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+}
+
+#field-buddy-section > h1 {
+  color: #2d2d31;
+  font-size: 8em;
+  padding-left: 50px;
+}
+
+.buddy-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buddy-container > div {
+  height: 450px;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quiet > div:nth-of-type(1) {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiet img {
+  height: 400px;
+}
+
+.q-skills {
+  width: 50%;
+}
+
+.q-skills div {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.quiet p.skill-type {
+  height: 15px;
+  font-size: 0.7em;
+  padding: 1px 0 1px 5px;
+}
+
+.quiet .rank {
+  font-size: 0.7em;
+}
+
+.q-skills .q-skill-bar {
+  height: 15px;
+  width: 500px;
+  border: 2px solid #3fc1b1;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.q-combat-level,
+.q-intel-level {
+  height: 100%;
+  width: 5%;
+  background-color: #3fc1b1;
+  border: 2px solid #26262a;
+  border-radius: 10px;
+}
+
+.q-rd-level,
+.q-medical-level {
+  height: 100%;
+  width: 5%;
+  background-color: #3fc1b1;
+  border: 2px solid #26262a;
+  border-radius: 10px;
+}
+
+.q-bd-level {
+  height: 100%;
+  width: 5%;
+  background-color: #3fc1b1;
+  border: 2px solid #26262a;
+  border-radius: 10px;
+}
+
+.q-support-level {
+  height: 100%;
+  width: 5%;
+  background-color: #3fc1b1;
+  border: 2px solid #26262a;
+  border-radius: 10px;
+}
+
+.quiet p.q-description {
+  color: #dfdfdf;
+  width: 80%;
+  height: 100%;
+  font-size: 1em;
+  text-align: center;
+  margin: 30px auto 0px auto;
+}
+
+.buddy-img-container {
+  width: 50%;
+}
+
+.buddy-img-container img {
+  width: 100%;
+}
+
+.buddy-info-container {
+  width: 50%;
+}
+
+.buddy-info-container p {
+  color: #dfdfdf;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 /* Changing sizes for phone users (Portrait View) */

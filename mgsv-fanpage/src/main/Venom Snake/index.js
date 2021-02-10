@@ -3,13 +3,18 @@ import "./venomsnake.css";
 import vs_img from "../../assets/VSProfile.png";
 import dots_img from "../../assets/dots.jpg";
 import vs_img_2 from "../../assets/vsnake.png";
+import quiet_img from "../../assets/quiet.png";
+import d_dog from "../../assets/d-dog.png";
+import d_horse from "../../assets/d-horse.png";
+import d_walker from "../../assets/d-walker.png";
+import pequod from "../../assets/pequod.png";
 import "./skillsfunc";
 
 const VenomSnakeProfile = () => {
   return (
     <>
-      <NavBar />
-      <Banner />
+      <NavBar1 />
+      <MainHeading />
       <AboutVenomSnake />
       <VenomSnakeSkills />
       <FieldBuddy />
@@ -17,7 +22,7 @@ const VenomSnakeProfile = () => {
   );
 };
 
-const NavBar = () => {
+const NavBar1 = () => {
   const handleAboutClick = () => {
     document
       .getElementById("about-section")
@@ -26,6 +31,11 @@ const NavBar = () => {
   const handleSkillsClick = () => {
     document
       .getElementById("skills-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+  const handleBuddyClick = () => {
+    document
+      .getElementById("field-buddy-section")
       .scrollIntoView({ behavior: "smooth" });
   };
   return (
@@ -41,13 +51,16 @@ const NavBar = () => {
           <a class="skills-link" onClick={() => handleSkillsClick()}>
             <h3>SKILLS</h3>
           </a>
+          <a class="buddy-link" onClick={() => handleBuddyClick()}>
+            <h3>BUDDY</h3>
+          </a>
         </div>
       </div>
     </nav>
   );
 };
 
-const Banner = () => {
+const MainHeading = () => {
   const handleAboutClick = () => {
     document
       .getElementById("about-section")
@@ -153,12 +166,15 @@ const VenomSnakeSkills = () => {
     <section id="skills-section">
       <h1>Skills</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        maxime ab debitis et dolores quo totam natus minima numquam officia nemo
-        veniam rem mollitia qui, quae possimus sequi. Officia, a.
+        The following are the estimated skill evaluations for Venom Snake. These
+        rankings can be found within the game. However, whether these are truly
+        accurate or not is not well understood.
       </p>
       <div class="skills-container">
-        <img src={vs_img_2} />
+        <img
+          src={vs_img_2}
+          alt="image of Diamond Dog's commander and chief, Venom Snake"
+        />
         <div class="skills">
           <div>
             <p class="skill-type">Combat</p>
@@ -215,14 +231,118 @@ const VenomSnakeSkills = () => {
 const FieldBuddy = () => {
   return (
     <section id="field-buddy-section">
+      <h1>BUDDY</h1>
       <div className="buddy-container">
-        <div className="quiet"></div>
-        <div className="d-dog"></div>
-        <div className="d-horse"></div>
-        <div className="d-walker"></div>
-        <div className="pequod"></div>
+        <Quiet />
+        <OtherFieldBuddies
+          buddy_image={d_dog}
+          buddy_info="D-Dog, the wolf of Diamond Dogs, 
+          is a highly trained canine which assists Venom 
+          Snake out in the field. He is capable of locating 
+          and identifying enemies in the near vicinity. Also, 
+          he is capable of engaging in combate and aprehending 
+          the enemy even through knockouts."
+        />
+        <OtherFieldBuddies
+          buddy_image={d_horse}
+          buddy_info="D-Horse provides Venom Snake a means of 
+          transportation when a vehicle isn't well suited for 
+          a specific mission or terrain. "
+        />
+        <OtherFieldBuddies
+          buddy_image={d_walker}
+          buddy_info="D-Walker is a robot which can be used as 
+          a means of transportation and as a weapon as well. 
+          It can be equiped with tranquilizer darts, fire arms, 
+          and a robotic arms to help aprehend enemies."
+        />
+        <OtherFieldBuddies
+          buddy_image={pequod}
+          buddy_info="Pequod is a pilot who provides Venom Snakes 
+          his main method of transportaion which is through helicopter, 
+          also known as the aerial command center. He can be summoned by 
+          by Venom Snake while in missions to provide aerial support 
+          through the use of onboard rail guns and missles. Also capable 
+          of bombbardments and defensive maneuvers through the use of flares."
+        />
       </div>
     </section>
+  );
+};
+
+const Quiet = () => {
+  return (
+    <div className="quiet">
+      <div>
+        <img src={quiet_img} alt="image of field operative 'Quiet'" />
+      </div>
+      <div class="q-skills">
+        <div>
+          <p class="skill-type">Combat</p>
+          <div class="q-skill-bar">
+            <div class="q-combat-level"></div>
+          </div>
+          <p class="rank">A++</p>
+        </div>
+        <div>
+          <p class="skill-type">
+            <abbr title="Research and Development">R & D</abbr>
+          </p>
+          <div class="q-skill-bar">
+            <div class="q-rd-level"></div>
+          </div>
+          <p class="rank">D</p>
+        </div>
+        <div>
+          <p class="skill-type">
+            <abbr title="Base Development">Base Dev</abbr>
+          </p>
+          <div class="q-skill-bar">
+            <div class="q-bd-level"></div>
+          </div>
+          <p class="rank">E</p>
+        </div>
+        <div>
+          <p class="skill-type">Support</p>
+          <div class="q-skill-bar">
+            <div class="q-support-level"></div>
+          </div>
+          <p class="rank">C</p>
+        </div>
+        <div>
+          <p class="skill-type">Intel</p>
+          <div class="q-skill-bar">
+            <div class="q-intel-level"></div>
+          </div>
+          <p class="rank">A++</p>
+        </div>
+        <div>
+          <p class="skill-type">Medical</p>
+          <div class="q-skill-bar">
+            <div class="q-medical-level"></div>
+          </div>
+          <p class="rank">D</p>
+        </div>
+        <p className="q-description">
+          Codename Quiet, provides Venom Snake reconnaissance and long distance
+          cover fire through the use of highly customized sniper rifles. Quiet
+          also uses strange powered abilities to help you and herself in battle.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const OtherFieldBuddies = ({ buddy_image, buddy_info }) => {
+  return (
+    <div className="other-field-buddies">
+      <div className="buddy-img-container">
+        <img src={buddy_image} />
+      </div>
+      <div className="buddy-info-container">
+        <p>{buddy_info}</p>
+      </div>
+    </div>
   );
 };
 
