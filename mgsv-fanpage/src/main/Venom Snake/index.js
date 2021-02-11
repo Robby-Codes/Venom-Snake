@@ -13,7 +13,7 @@ import "./skillsfunc";
 const VenomSnakeProfile = () => {
   return (
     <>
-      <NavBar1 />
+      <NavBar />
       <MainHeading />
       <AboutVenomSnake />
       <VenomSnakeSkills />
@@ -22,7 +22,7 @@ const VenomSnakeProfile = () => {
   );
 };
 
-const NavBar1 = () => {
+const NavBar = () => {
   const handleAboutClick = () => {
     document
       .getElementById("about-section")
@@ -42,7 +42,7 @@ const NavBar1 = () => {
     <nav class="navigation">
       <div class="nav-container">
         <a href=".">
-          <h1>Turn Back</h1>
+          <h1>RETURN</h1>
         </a>
         <div>
           <a class="about-link" onClick={() => handleAboutClick()}>

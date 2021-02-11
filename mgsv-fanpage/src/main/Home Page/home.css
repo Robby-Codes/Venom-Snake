@@ -8,6 +8,30 @@
   margin: 0;
 }
 
+.cover-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: 999;
+}
+
+@keyframes moveCover {
+  99% {
+    transform: translate(-100%, 0%);
+  }
+  100% {
+    transform: translate(-100%, 0%);
+    display: none;
+  }
+}
+
+.cover-container {
+  animation: moveCover 1s 2s forwards;
+}
+
 .homepage-container {
   height: 100vh;
   width: 100%;

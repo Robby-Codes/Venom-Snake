@@ -11,7 +11,12 @@ import "./home.css";
 import homevideoloop from "../../assets/hploop.mp4";
 
 const HomePage = () => {
-  return <Menu />;
+  return (
+    <>
+      <Cover />
+      <Menu />
+    </>
+  );
 };
 
 const Menu = () => {
@@ -30,13 +35,14 @@ const Menu = () => {
         <Link to="/Venom-Snake-Profile" id="vs-link">
           <h1>VENOM SNAKE PROFILE</h1>
         </Link>
-        <Link to="/About-Diamond-Dogs" id="dd-link">
-          <h1>ABOUT DIAMOND DOGS</h1>
-        </Link>
       </div>
       <small>Created By: Roberto Guerra</small>
     </div>
   );
+};
+
+const Cover = () => {
+  return <div className="cover-container"></div>;
 };
 
 export default HomePage;
