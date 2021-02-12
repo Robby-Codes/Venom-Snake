@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import "./venomsnake.css";
 import vs_img from "../../assets/VSProfile.png";
 import dots_img from "../../assets/dots.jpg";
@@ -12,13 +21,17 @@ import "./skillsfunc";
 
 const VenomSnakeProfile = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 0.5 }}
+    >
       <NavBar />
       <MainHeading />
       <AboutVenomSnake />
       <VenomSnakeSkills />
       <FieldBuddy />
-    </>
+    </motion.div>
   );
 };
 
@@ -41,9 +54,9 @@ const NavBar = () => {
   return (
     <nav class="navigation">
       <div class="nav-container">
-        <a href=".">
+        <Link to="/">
           <h1>RETURN</h1>
-        </a>
+        </Link>
         <div>
           <a class="about-link" onClick={() => handleAboutClick()}>
             <h3>ABOUT</h3>

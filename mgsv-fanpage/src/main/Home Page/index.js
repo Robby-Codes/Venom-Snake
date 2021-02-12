@@ -7,15 +7,20 @@ import {
   useRouteMatch,
   useParams,
 } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import "./home.css";
 import homevideoloop from "../../assets/hploop.mp4";
 
 const HomePage = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 0.5 }}
+    >
       <Cover />
       <Menu />
-    </>
+    </motion.div>
   );
 };
 
