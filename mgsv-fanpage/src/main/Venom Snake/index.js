@@ -19,12 +19,26 @@ import d_walker from "../../assets/d-walker.png";
 import pequod from "../../assets/pequod.png";
 import "./skillsfunc";
 
+const vspVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+  exit: {
+    x: "100%",
+  },
+};
+
 const VenomSnakeProfile = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
+      variants={vspVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      transition={{ duration: 1 }}
     >
       <NavBar />
       <MainHeading />

@@ -9,10 +9,14 @@
 }
 
 body {
+  height: 100vh;
+  overflow-x: hidden;
   background-image: url("../../assets/timer.jpeg");
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  z-index: -1;
 }
 
 .cover-container {
@@ -37,7 +41,7 @@ body {
 }
 
 .cover-container {
-  animation: moveCover 1s 2s forwards;
+  animation: moveCover 1s 1.5s forwards;
 }
 
 .homepage-container {

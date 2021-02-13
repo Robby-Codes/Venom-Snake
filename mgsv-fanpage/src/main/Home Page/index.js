@@ -11,12 +11,26 @@ import { AnimatePresence, motion } from "framer-motion";
 import "./home.css";
 import homevideoloop from "../../assets/hploop.mp4";
 
+const hpVariants = {
+  hidden: {
+    x: "-100%",
+  },
+  visible: {
+    x: "0%",
+  },
+  exit: {
+    x: "-100%",
+  },
+};
+
 const HomePage = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
+      variants={hpVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      transition={{ duration: 1.5 }}
     >
       <Cover />
       <Menu />
