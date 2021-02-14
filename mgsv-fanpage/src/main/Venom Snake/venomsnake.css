@@ -40,6 +40,11 @@
 .nav-container > a {
   color: #dfdfdf;
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+.nav-container a:hover {
+  color: #d61522;
 }
 
 .nav-container div > a {
@@ -56,6 +61,10 @@
   height: 100vh;
   width: 100%;
   background-color: #26262a;
+  background-image: url("../../assets/vsbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 8vh 10px 10px 10px;
   overflow: hidden;
 }
@@ -72,10 +81,15 @@
 .banner-container h1 {
   font-size: 3em;
   padding-bottom: 20px;
+  text-shadow: 1px 1px 1px black;
 }
 
-.banner-container span {
+.banner-container span.heading-red {
   color: #d61522;
+}
+
+.banner-container h3 {
+  text-shadow: 1px 1px 1px black;
 }
 
 .banner-container button {
@@ -97,8 +111,9 @@
 
 .banner-container img {
   height: 50%;
-  border: 10px solid #2d2d31;
+  border: 5px solid #232627;
   border-radius: 50%;
+  box-shadow: 3px 3px 10px black;
 }
 
 /*About Section*/
@@ -108,6 +123,7 @@
   width: 100%;
   background-color: #26262a;
   padding-top: 8vh;
+  border-top: 5px solid black;
   overflow: hidden;
 }
 
@@ -115,12 +131,14 @@
   color: #2d2d31;
   font-size: 8em;
   padding-left: 50px;
+  margin-bottom: 30px;
 }
 
 .about-content {
-  width: +90%;
+  width: 65%;
   background-color: #26262a;
   padding: 20px;
+  border-radius: 10px;
   margin: 0 auto;
   position: relative;
   top: -40px;
@@ -135,13 +153,16 @@
 
 .dot-container {
   height: 400px;
+  width: 400px;
   position: relative;
   top: -350px;
   left: 70%;
+  border: 5px solid black;
 }
 
 .dot-container img {
   height: 100%;
+  width: 100%;
 }
 
 /* Skills Section */
@@ -160,25 +181,38 @@
 #skills-section > h1 {
   color: #2d2d31;
   font-size: 8em;
+  margin-bottom: 30px;
   padding-right: 50px;
   align-self: flex-end;
 }
 
-#skills-section > p {
-  color: #dfdfdf;
-  width: 50%;
-  text-align: center;
-  margin-bottom: 50px;
+#skills-section .vs-skill-info-container {
+  height: 100%;
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -2px -2px 3px gray, 3px 3px 6px black;
 }
 
-#skills-section .skills-container img {
-  height: 600px;
+#skills-section .vs-skill-info-container > p {
+  color: #dfdfdf;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#skills-section .vs-skill-info-container .skills-container img {
+  height: 450px;
 }
 
 .skills-container {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .skills {
@@ -238,6 +272,9 @@
   background-color: #26262a;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
   overflow: hidden;
 }
 
@@ -245,26 +282,49 @@
   color: #2d2d31;
   font-size: 8em;
   padding-left: 50px;
+  position: relative;
+  margin-right: auto;
 }
 
 .buddy-container {
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
-  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.buddy-container > div {
+.buddy-container > div:nth-of-type(1),
+.b-info-container-1 > div,
+.b-info-container-2 > div {
   height: 450px;
   width: 80%;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin: 20px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 10px black, -2px -2px 4px gray;
+}
+
+.other-field-buddies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buddy-container > div.quiet {
+  width: 65%;
+}
+
+.b-info-container-1,
+.b-info-container-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -346,7 +406,7 @@
   height: 100%;
   font-size: 1em;
   text-align: center;
-  margin: 30px auto 0px auto;
+  margin: 20px auto 0px auto;
 }
 
 .buddy-img-container {
@@ -358,14 +418,22 @@
 }
 
 .buddy-info-container {
-  width: 50%;
+  width: 100%;
 }
 
 .buddy-info-container p {
   color: #dfdfdf;
   text-align: center;
-  width: 80%;
-  margin: auto;
+  width: 100%;
+}
+
+.banner2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/vsbanner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Changing sizes for phone users (Portrait View) */

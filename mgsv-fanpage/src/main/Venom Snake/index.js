@@ -18,6 +18,7 @@ import d_horse from "../../assets/d-horse.png";
 import d_walker from "../../assets/d-walker.png";
 import pequod from "../../assets/pequod.png";
 import "./skillsfunc";
+import "./otheranimations";
 
 const vspVariants = {
   hidden: {
@@ -98,7 +99,7 @@ const MainHeading = () => {
       <div class="banner-container">
         <div>
           <h1>
-            Venom <span>Snake</span>,
+            Venom <span className="heading-red">Snake</span>,
           </h1>
           <h3>Commander and Chief of Diamond Dogs.</h3>
           <button id="about-btn" onClick={() => handleAboutClick()}>
@@ -116,60 +117,36 @@ const AboutVenomSnake = () => {
     <section id="about-section">
       <h1>About</h1>
       <div class="about-content">
+        <p>[Spoiler Alert]</p>
         <p>
-          Punished Venom Snake, also known Big Boss, Ahab, V, or Big Boss'
-          Phantom, was a combat medic for for Militaires Sans Frontières (MSF),
-          who would later become the mercenary commander of Diamond Dogs and
-          Outer Heaven as on of the original Big Boss' most skilled and trusted
-          lieutenants.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias
+          facere obcaecati quia libero adipisci voluptate, dolore minus illo
+          deserunt eius minima dolorem quidem nemo aspernatur, cupiditate porro,
+          nobis error?
         </p>
         <p>
-          Venom Snake was originally a field medic as mentions above. However,
-          after falling into a 9 year comma, after an enemy (XOF) attack, things
-          would change forever. He suffered imense brain and bodily damage. The
-          original Big Boss and Ocelot would take advantage of this and convince
-          him that he is the real Big Boss. And he was given the code name
-          Punished Venom Snake and the title of Big Boss.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+          voluptatibus quis officia quod non minima error possimus alias
+          reprehenderit accusantium iste debitis voluptatem odit eum, corrupti
+          placeat laborum qui. Mollitia.
         </p>
         <p>
-          V fell for this thanks to his brain damage, general amnesia,
-          dissociative amnesia, dissociative identity disorder, and hypnotic
-          suggestion. Thankfully however, he was able to regain his skills and
-          expertise through training.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+          blanditiis ullam cumque in velit error deserunt vero aperiam sequi
+          quis debitis optio, ipsam doloribus necessitatibus quam ut pariatur
+          iste voluptates?
         </p>
         <p>
-          While the original Big Boss was away working on his plans for Zanzibar
-          Land, Venom Snake took his place and believed himself to be the
-          original Big Boss. He built up the Mother Base and gathered up many
-          recruits with the help of Ocelot and Miller. He went on countless
-          infiltration and rescue operations in Afghanistan and Angola-Zaire.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+          voluptatibus quis officia quod non minima error possimus alias
+          reprehenderit accusantium iste debitis voluptatem odit eum, corrupti
+          placeat laborum qui. Mollitia.
         </p>
         <p>
-          In my opinion, after playing the game... It was starting to become
-          obvious that Venom Snake was starting to outshine the original Big
-          Boss. Not only was he capable of doing all the things the original
-          could but he also hinted at a very different personal goal than that
-          of the originals'. World Peace.
-        </p>
-        <p>
-          Venom Snake showed greater empathy and compassion than Big Boss and
-          even ended up de-nuclearizing the entire world. But eventually things
-          changed. Venom Snakes memories returned to him, he realized that he
-          wasn't actually Big Boss. He was just playing the part so that the
-          original could go about his plans untroubled by oposition. He was
-          tricked, taken advantage of and was ultamitely just a pawn in the
-          original Big Boss' plans.
-        </p>
-        <p>
-          In my opinion. Venom Snakes goals were not aligned with the original
-          Big Boss' goals. And because of the way he was treated, this probably
-          built up animosity despite his loyalty for the Original Big Boss. Not
-          only were his goals different but this built up animosity risked the
-          newly formed Mother Base and Diamond Dogs turing against the origianl
-          Big Boss. For this reason, despite Venom Snake doing a great job, the
-          original Big Boss probably ended up betraying him in the end. Ending
-          Venom Snakes life and also the lives of all the Diamond Dogs due to
-          the entire base being destroyed.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+          blanditiis ullam cumque in velit error deserunt vero aperiam sequi
+          quis debitis optio, ipsam doloribus necessitatibus quam ut pariatur
+          iste voluptates?
         </p>
         <p>
           <em>
@@ -192,62 +169,64 @@ const VenomSnakeSkills = () => {
   return (
     <section id="skills-section">
       <h1>Skills</h1>
-      <p>
-        The following are the estimated skill evaluations for Venom Snake. These
-        rankings can be found within the game. However, whether these are truly
-        accurate or not is not well understood.
-      </p>
-      <div class="skills-container">
-        <img
-          src={vs_img_2}
-          alt="image of Diamond Dog's commander and chief, Venom Snake"
-        />
-        <div class="skills">
-          <div>
-            <p class="skill-type">Combat</p>
-            <div class="skill-bar">
-              <div class="combat-level"></div>
+      <div className="vs-skill-info-container">
+        <p>
+          The following are the estimated skill evaluations for Venom Snake.
+          These rankings can be found within the game. However, whether these
+          are truly accurate or not is not well understood.
+        </p>
+        <div class="skills-container">
+          <img
+            src={vs_img_2}
+            alt="image of Diamond Dog's commander and chief, Venom Snake"
+          />
+          <div class="skills">
+            <div>
+              <p class="skill-type">Combat</p>
+              <div class="skill-bar">
+                <div class="combat-level"></div>
+              </div>
+              <p class="rank">A++</p>
             </div>
-            <p class="rank">A++</p>
-          </div>
-          <div>
-            <p class="skill-type">
-              <abbr title="Research and Development">R & D</abbr>
-            </p>
-            <div class="skill-bar">
-              <div class="rd-level"></div>
+            <div>
+              <p class="skill-type">
+                <abbr title="Research and Development">R & D</abbr>
+              </p>
+              <div class="skill-bar">
+                <div class="rd-level"></div>
+              </div>
+              <p class="rank">A++</p>
             </div>
-            <p class="rank">A++</p>
-          </div>
-          <div>
-            <p class="skill-type">
-              <abbr title="Base Development">Base Dev</abbr>
-            </p>
-            <div class="skill-bar">
-              <div class="bd-level"></div>
+            <div>
+              <p class="skill-type">
+                <abbr title="Base Development">Base Dev</abbr>
+              </p>
+              <div class="skill-bar">
+                <div class="bd-level"></div>
+              </div>
+              <p class="rank">A++</p>
             </div>
-            <p class="rank">A++</p>
-          </div>
-          <div>
-            <p class="skill-type">Support</p>
-            <div class="skill-bar">
-              <div class="support-level"></div>
+            <div>
+              <p class="skill-type">Support</p>
+              <div class="skill-bar">
+                <div class="support-level"></div>
+              </div>
+              <p class="rank">A++</p>
             </div>
-            <p class="rank">A++</p>
-          </div>
-          <div>
-            <p class="skill-type">Intel</p>
-            <div class="skill-bar">
-              <div class="intel-level"></div>
+            <div>
+              <p class="skill-type">Intel</p>
+              <div class="skill-bar">
+                <div class="intel-level"></div>
+              </div>
+              <p class="rank">A++</p>
             </div>
-            <p class="rank">A++</p>
-          </div>
-          <div>
-            <p class="skill-type">Medical</p>
-            <div class="skill-bar">
-              <div class="medical-level"></div>
+            <div>
+              <p class="skill-type">Medical</p>
+              <div class="skill-bar">
+                <div class="medical-level"></div>
+              </div>
+              <p class="rank">A++</p>
             </div>
-            <p class="rank">A++</p>
           </div>
         </div>
       </div>
@@ -257,43 +236,35 @@ const VenomSnakeSkills = () => {
 
 const FieldBuddy = () => {
   return (
-    <section id="field-buddy-section">
-      <h1>BUDDY</h1>
-      <div className="buddy-container">
-        <Quiet />
-        <OtherFieldBuddies
-          buddy_image={d_dog}
-          buddy_info="D-Dog, the wolf of Diamond Dogs, 
-          is a highly trained canine which assists Venom 
-          Snake out in the field. He is capable of locating 
-          and identifying enemies in the near vicinity. Also, 
-          he is capable of engaging in combate and aprehending 
-          the enemy even through knockouts."
-        />
-        <OtherFieldBuddies
-          buddy_image={d_horse}
-          buddy_info="D-Horse provides Venom Snake a means of 
-          transportation when a vehicle isn't well suited for 
-          a specific mission or terrain. "
-        />
-        <OtherFieldBuddies
-          buddy_image={d_walker}
-          buddy_info="D-Walker is a robot which can be used as 
-          a means of transportation and as a weapon as well. 
-          It can be equiped with tranquilizer darts, fire arms, 
-          and a robotic arms to help aprehend enemies."
-        />
-        <OtherFieldBuddies
-          buddy_image={pequod}
-          buddy_info="Pequod is a pilot who provides Venom Snakes 
-          his main method of transportaion which is through helicopter, 
-          also known as the aerial command center. He can be summoned by 
-          by Venom Snake while in missions to provide aerial support 
-          through the use of onboard rail guns and missles. Also capable 
-          of bombbardments and defensive maneuvers through the use of flares."
-        />
-      </div>
-    </section>
+    <>
+      <section id="field-buddy-section">
+        <h1>BUDDY</h1>
+        <div className="buddy-container">
+          <Quiet />
+          <div className="b-info-container-1">
+            <OtherFieldBuddies
+              buddy_image={d_dog}
+              buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
+            />
+            <OtherFieldBuddies
+              buddy_image={d_horse}
+              buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
+            />
+          </div>
+          <div className="b-info-container-2">
+            <OtherFieldBuddies
+              buddy_image={d_walker}
+              buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
+            />
+            <OtherFieldBuddies
+              buddy_image={pequod}
+              buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
+            />
+          </div>
+        </div>
+      </section>
+      <div className="banner2"></div>
+    </>
   );
 };
 

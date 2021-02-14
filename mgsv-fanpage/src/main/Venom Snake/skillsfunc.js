@@ -34,6 +34,7 @@ function vsStatsIntoView(element) {
       var position = element[x].getBoundingClientRect().top;
       if (position - windowHeight <= 0) {
         elem.style.transition = "all 2s";
+        elem.style.transitionDelay = "1s";
         elem.style.width = "70%";
       } else if (position - windowHeight > 0) {
         elem.style.transition = "all 2s";
@@ -51,6 +52,7 @@ function qStatsIntoView(element) {
       var position = element[x].getBoundingClientRect().top;
       if (position - windowHeight <= 0) {
         elem.style.transition = "all 2s";
+        elem.style.transitionDelay = "1s";
         switch (elem) {
           case document.getElementsByClassName("q-combat-level")[0]:
           case document.getElementsByClassName("q-intel-level")[0]:
