@@ -20,6 +20,7 @@ import pequod from "../../assets/pequod.png";
 import "./skillsfunc";
 import "./otheranimations";
 
+// framer motion transition animations for VenomSnakeProfile
 const vspVariants = {
   hidden: {
     opacity: 0,
@@ -32,6 +33,7 @@ const vspVariants = {
   },
 };
 
+// Main profile page component
 const VenomSnakeProfile = () => {
   return (
     <motion.div
@@ -50,6 +52,7 @@ const VenomSnakeProfile = () => {
   );
 };
 
+// Navigation Bar component
 const NavBar = () => {
   const handleAboutClick = () => {
     document
@@ -67,19 +70,19 @@ const NavBar = () => {
       .scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <nav class="navigation">
-      <div class="nav-container">
+    <nav className="navigation">
+      <div className="nav-container">
         <Link to="/">
           <h1>RETURN</h1>
         </Link>
         <div>
-          <a class="about-link" onClick={() => handleAboutClick()}>
+          <a className="about-link" onClick={() => handleAboutClick()}>
             <h3>ABOUT</h3>
           </a>
-          <a class="skills-link" onClick={() => handleSkillsClick()}>
+          <a className="skills-link" onClick={() => handleSkillsClick()}>
             <h3>SKILLS</h3>
           </a>
-          <a class="buddy-link" onClick={() => handleBuddyClick()}>
+          <a className="buddy-link" onClick={() => handleBuddyClick()}>
             <h3>BUDDY</h3>
           </a>
         </div>
@@ -88,6 +91,7 @@ const NavBar = () => {
   );
 };
 
+// Banner Section component
 const MainHeading = () => {
   const handleAboutClick = () => {
     document
@@ -96,7 +100,7 @@ const MainHeading = () => {
   };
   return (
     <section id="banner-section">
-      <div class="banner-container">
+      <div className="banner-container">
         <div>
           <h1>
             Venom <span className="heading-red">Snake</span>,
@@ -112,11 +116,12 @@ const MainHeading = () => {
   );
 };
 
+// About Section component
 const AboutVenomSnake = () => {
   return (
     <section id="about-section">
       <h1>About</h1>
-      <div class="about-content">
+      <div className="about-content">
         <p>[Spoiler Alert]</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias
@@ -158,13 +163,14 @@ const AboutVenomSnake = () => {
         </p>
         <p>- Venom Snake</p>
       </div>
-      <div class="dot-container">
+      <div className="dot-container">
         <img src={dots_img} />
       </div>
     </section>
   );
 };
 
+// Skills Section component
 const VenomSnakeSkills = () => {
   return (
     <section id="skills-section">
@@ -175,57 +181,57 @@ const VenomSnakeSkills = () => {
           These rankings can be found within the game. However, whether these
           are truly accurate or not is not well understood.
         </p>
-        <div class="skills-container">
+        <div className="skills-container">
           <img
             src={vs_img_2}
             alt="image of Diamond Dog's commander and chief, Venom Snake"
           />
-          <div class="skills">
+          <div className="skills">
             <div>
-              <p class="skill-type">Combat</p>
-              <div class="skill-bar">
-                <div class="combat-level"></div>
+              <p className="skill-type">Combat</p>
+              <div className="skill-bar">
+                <div className="combat-level"></div>
               </div>
-              <p class="rank">A++</p>
+              <p className="rank">A++</p>
             </div>
             <div>
-              <p class="skill-type">
+              <p className="skill-type">
                 <abbr title="Research and Development">R & D</abbr>
               </p>
-              <div class="skill-bar">
-                <div class="rd-level"></div>
+              <div className="skill-bar">
+                <div className="rd-level"></div>
               </div>
-              <p class="rank">A++</p>
+              <p className="rank">A++</p>
             </div>
             <div>
-              <p class="skill-type">
+              <p className="skill-type">
                 <abbr title="Base Development">Base Dev</abbr>
               </p>
-              <div class="skill-bar">
-                <div class="bd-level"></div>
+              <div className="skill-bar">
+                <div className="bd-level"></div>
               </div>
-              <p class="rank">A++</p>
+              <p className="rank">A++</p>
             </div>
             <div>
-              <p class="skill-type">Support</p>
-              <div class="skill-bar">
-                <div class="support-level"></div>
+              <p className="skill-type">Support</p>
+              <div className="skill-bar">
+                <div className="support-level"></div>
               </div>
-              <p class="rank">A++</p>
+              <p className="rank">A++</p>
             </div>
             <div>
-              <p class="skill-type">Intel</p>
-              <div class="skill-bar">
-                <div class="intel-level"></div>
+              <p className="skill-type">Intel</p>
+              <div className="skill-bar">
+                <div className="intel-level"></div>
               </div>
-              <p class="rank">A++</p>
+              <p className="rank">A++</p>
             </div>
             <div>
-              <p class="skill-type">Medical</p>
-              <div class="skill-bar">
-                <div class="medical-level"></div>
+              <p className="skill-type">Medical</p>
+              <div className="skill-bar">
+                <div className="medical-level"></div>
               </div>
-              <p class="rank">A++</p>
+              <p className="rank">A++</p>
             </div>
           </div>
         </div>
@@ -234,6 +240,7 @@ const VenomSnakeSkills = () => {
   );
 };
 
+// Buddy Section component
 const FieldBuddy = () => {
   return (
     <>
@@ -268,58 +275,59 @@ const FieldBuddy = () => {
   );
 };
 
+// "Quiet" component for Buddy Section
 const Quiet = () => {
   return (
     <div className="quiet">
       <div>
         <img src={quiet_img} alt="image of field operative 'Quiet'" />
       </div>
-      <div class="q-skills">
+      <div className="q-skills">
         <div>
-          <p class="skill-type">Combat</p>
-          <div class="q-skill-bar">
-            <div class="q-combat-level"></div>
+          <p className="skill-type">Combat</p>
+          <div className="q-skill-bar">
+            <div className="q-combat-level"></div>
           </div>
-          <p class="rank">A++</p>
+          <p className="rank">A++</p>
         </div>
         <div>
-          <p class="skill-type">
+          <p className="skill-type">
             <abbr title="Research and Development">R & D</abbr>
           </p>
-          <div class="q-skill-bar">
-            <div class="q-rd-level"></div>
+          <div className="q-skill-bar">
+            <div className="q-rd-level"></div>
           </div>
-          <p class="rank">D</p>
+          <p className="rank">D</p>
         </div>
         <div>
-          <p class="skill-type">
+          <p className="skill-type">
             <abbr title="Base Development">Base Dev</abbr>
           </p>
-          <div class="q-skill-bar">
-            <div class="q-bd-level"></div>
+          <div className="q-skill-bar">
+            <div className="q-bd-level"></div>
           </div>
-          <p class="rank">E</p>
+          <p className="rank">E</p>
         </div>
         <div>
-          <p class="skill-type">Support</p>
-          <div class="q-skill-bar">
-            <div class="q-support-level"></div>
+          <p className="skill-type">Support</p>
+          <div className="q-skill-bar">
+            <div className="q-support-level"></div>
           </div>
-          <p class="rank">C</p>
+          <p className="rank">C</p>
         </div>
         <div>
-          <p class="skill-type">Intel</p>
-          <div class="q-skill-bar">
-            <div class="q-intel-level"></div>
+          <p className="skill-type">Intel</p>
+          <div className="q-skill-bar">
+            <div className="q-intel-level"></div>
           </div>
-          <p class="rank">A++</p>
+          <p className="rank">A++</p>
         </div>
         <div>
-          <p class="skill-type">Medical</p>
-          <div class="q-skill-bar">
-            <div class="q-medical-level"></div>
+          <p className="skill-type">Medical</p>
+          <div className="q-skill-bar">
+            <div className="q-medical-level"></div>
           </div>
-          <p class="rank">D</p>
+          <p className="rank">D</p>
         </div>
         <p className="q-description">
           Codename Quiet, provides Venom Snake reconnaissance and long distance
@@ -331,6 +339,7 @@ const Quiet = () => {
   );
 };
 
+// Other buddy components for Buddy Section
 const OtherFieldBuddies = ({ buddy_image, buddy_info }) => {
   return (
     <div className="other-field-buddies">

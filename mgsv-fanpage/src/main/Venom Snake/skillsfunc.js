@@ -1,3 +1,5 @@
+// Animations for skill bars in Venom Snake Profile Page
+
 const combatLevel = document.getElementsByClassName("combat-level");
 const rdLevel = document.getElementsByClassName("rd-level");
 const bdLevel = document.getElementsByClassName("bd-level");
@@ -26,6 +28,7 @@ qStatsIntoView(qSupportLevel);
 qStatsIntoView(qIntelLevel);
 qStatsIntoView(qMedicalLevel);
 
+// Animates Venom Snake skill bars when in, and out, of view.
 function vsStatsIntoView(element) {
   var windowHeight = window.innerHeight;
   window.addEventListener("scroll", () => {
@@ -33,17 +36,18 @@ function vsStatsIntoView(element) {
       var elem = element[x];
       var position = element[x].getBoundingClientRect().top;
       if (position - windowHeight <= 0) {
-        elem.style.transition = "all 2s";
-        elem.style.transitionDelay = "1s";
+        elem.style.transition = "all 1s";
+        elem.style.transitionDelay = "0.5s";
         elem.style.width = "70%";
       } else if (position - windowHeight > 0) {
-        elem.style.transition = "all 2s";
+        elem.style.transition = "all 0.5s";
         elem.style.width = "5%";
       }
     }
   });
 }
 
+// Animates "Quiet" skill bars when in, and out, of view.
 function qStatsIntoView(element) {
   var windowHeight = window.innerHeight;
   window.addEventListener("scroll", () => {
@@ -51,8 +55,8 @@ function qStatsIntoView(element) {
       var elem = element[x];
       var position = element[x].getBoundingClientRect().top;
       if (position - windowHeight <= 0) {
-        elem.style.transition = "all 2s";
-        elem.style.transitionDelay = "1s";
+        elem.style.transition = "all 1s";
+        elem.style.transitionDelay = "0.5s";
         switch (elem) {
           case document.getElementsByClassName("q-combat-level")[0]:
           case document.getElementsByClassName("q-intel-level")[0]:
@@ -73,7 +77,7 @@ function qStatsIntoView(element) {
             break;
         }
       } else if (position - windowHeight > 0) {
-        elem.style.transition = "all 2s";
+        elem.style.transition = "all 0.5s";
         switch (elem) {
           case document.getElementsByClassName("q-combat-level")[0]:
           case document.getElementsByClassName("q-intel-level")[0]:

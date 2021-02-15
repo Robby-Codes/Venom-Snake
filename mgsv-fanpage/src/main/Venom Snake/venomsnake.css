@@ -268,7 +268,7 @@
 #field-buddy-section {
   height: auto;
   width: 100%;
-  padding: 100px 0;
+  padding: 8vh 0 50px 0;
   background-color: #26262a;
   display: flex;
   flex-direction: column;
@@ -458,17 +458,17 @@
   }
 
   .banner-container h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
   }
 
   .banner-container h3 {
-    font-size: 1em;
+    font-size: 0.6em;
     text-align: center;
   }
 
   .banner-container button {
-    font-size: 0.7em;
+    font-size: 0.6em;
     height: 30px;
     width: 50px;
     margin-top: 20px;
@@ -491,13 +491,13 @@
   .about-content {
     width: 90%;
     position: static;
-    box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a,
-      0 10px 10px #19181a;
+    box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a;
   }
 
   .about-content p {
     font-size: 0.8em;
     padding-bottom: 20px;
+    text-align: center;
   }
 
   .dot-container {
@@ -510,6 +510,12 @@
     height: auto;
   }
 
+  #skills-section .vs-skill-info-container {
+    width: 95%;
+    padding: 20px 10px 20px 10px;
+    box-shadow: -2px -2px 3px black, 2px 2px 3px black;
+  }
+
   #skills-section > h1 {
     font-size: 5em;
     align-self: flex-start;
@@ -517,50 +523,156 @@
     margin-bottom: 20px;
   }
 
-  #skills-section > p {
+  #skills-section .vs-skill-info-container > p {
     font-size: 0.8em;
-    width: 80%;
+    width: 95%;
+  }
+
+  #skills-section .vs-skill-info-container .skills-container img {
+    height: 15em;
+    width: auto;
+    align-self: center;
+    margin-bottom: 30px;
   }
 
   .skills-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
   }
 
-  #skills-section img,
-  #partners-section img {
-    height: auto;
-    width: 10em;
-    align-self: center;
-    margin-bottom: 30px;
-  }
-
   .skills {
-    width: 90%;
+    width: 100%;
     align-self: center;
   }
 
   .skills div {
-    margin-bottom: 12px;
+    width: 100%;
+    margin-bottom: 6px;
   }
 
   .skill-type {
-    font-size: 0.7em;
-    width: 100px;
+    font-size: 0.6em;
+    height: 15px;
+    width: 110px;
     margin-right: 10px;
+    padding: 2px;
   }
 
   .skills .skill-bar {
+    height: 15px;
     width: 100%;
     margin-right: 10px;
+  }
+
+  .rank {
+    font-size: 0.6em;
+    width: 50px;
+    text-align: center;
+  }
+
+  /* Changes to Buddy Section */
+
+  #field-buddy-section > h1 {
+    font-size: 4.45em;
+    margin-right: 0;
+    position: static;
+    padding-left: 0;
+  }
+
+  .buddy-container {
+    width: 95%;
+  }
+
+  .buddy-container > div:nth-of-type(1),
+  .b-info-container-1 > div,
+  .b-info-container-2 > div {
+    height: auto;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    margin: 10px 0 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px black, -2px -2px 6px black;
+  }
+
+  .buddy-container > div.quiet {
+    width: 100%;
+  }
+
+  .b-info-container-1,
+  .b-info-container-2 {
+    flex-direction: column;
+  }
+
+  .quiet > div:nth-of-type(1) {
+    width: auto;
+  }
+
+  .quiet img {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .q-skills {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .q-skills div {
+    margin-bottom: 6px;
+  }
+
+  .quiet p.skill-type {
+    font-size: 0.6em;
+    height: 15px;
+    width: 170px;
+    margin-right: 10px;
+    padding: 2px;
+  }
+
+  .quiet .rank {
+    font-size: 0.6em;
+    width: 80px;
+    text-align: center;
+  }
+
+  .q-skills .q-skill-bar {
+    margin-right: 10px;
+  }
+
+  .quiet p.q-description {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .buddy-info-container {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .buddy-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .buddy-img-container img {
+    width: auto;
+    height: 200px;
+  }
+
+  .buddy-info-container p {
+    font-size: 0.8em;
   }
 }
 
 /* Changing sizes for phone users (Landscape View) */
-@media screen and (min-width: 501px) and (max-width: 840px) {
+@media screen and (min-width: 501px) and (max-width: 764px) {
   /* Navigation Section Changes */
 
   .nav-container > a {
@@ -617,7 +729,7 @@
   }
 
   .about-content {
-    width: 90%;
+    width: 95%;
     position: static;
     box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a,
       0 10px 10px #19181a;
@@ -650,18 +762,23 @@
     width: 80%;
   }
 
+  #skills-section .vs-skill-info-container {
+    width: 95%;
+    padding: 20px;
+    box-shadow: -5px 5px 10px #19181a, 5px -5px 10px #19181a;
+  }
+
   .skills-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
   }
 
-  #skills-section img,
-  #partners-section img {
-    height: auto;
-    width: 8em;
+  #skills-section img {
+    height: 150px;
+    width: auto;
     align-self: center;
     margin-bottom: 30px;
     margin-right: 20px;
@@ -673,17 +790,319 @@
   }
 
   .skills div {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .skill-type {
+    height: 15px;
     font-size: 0.7em;
     width: 100px;
+    padding: 2px;
     margin-right: 10px;
   }
 
   .skills .skill-bar {
+    height: 15px;
     width: 100%;
     margin-right: 10px;
+  }
+
+  .rank {
+    font-size: 0.75em;
+  }
+
+  /* Changes to Buddy Section */
+
+  #field-buddy-section > h1 {
+    font-size: 5em;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .buddy-container {
+    width: 95%;
+  }
+
+  .buddy-container > div:nth-of-type(1),
+  .b-info-container-1 > div,
+  .b-info-container-2 > div {
+    height: auto;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    margin: 10px 0 10px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px black, -2px -2px 6px black;
+  }
+
+  .buddy-container > div.quiet {
+    width: 100%;
+  }
+
+  .b-info-container-1,
+  .b-info-container-2 {
+    flex-direction: column;
+  }
+
+  .quiet > div:nth-of-type(1) {
+    width: auto;
+  }
+
+  .quiet img {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .q-skills {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .q-skills div {
+    margin-bottom: 6px;
+  }
+
+  .quiet p.skill-type {
+    font-size: 0.6em;
+    height: 15px;
+    width: 170px;
+    margin-right: 10px;
+    padding: 2px;
+  }
+
+  .quiet .rank {
+    font-size: 0.6em;
+    width: 80px;
+    text-align: center;
+  }
+
+  .q-skills .q-skill-bar {
+    margin-right: 10px;
+  }
+
+  .quiet p.q-description {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .buddy-info-container {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .buddy-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .buddy-img-container img {
+    width: auto;
+    height: 200px;
+  }
+
+  .buddy-info-container p {
+    font-size: 0.8em;
+  }
+}
+
+/* Changes for intermediate screen sizes*/
+@media screen and (min-width: 765px) and (max-width: 1199px) {
+  /* Changes to navbar */
+
+  .navigation {
+    padding: 15px 3%;
+  }
+
+  /* Changes to Banner Section */
+
+  .banner-container img {
+    height: 55%;
+  }
+
+  .banner-container button {
+    float: left;
+  }
+
+  /* Changes to About Section */
+
+  .about-content {
+    font-size: 0.85em;
+    width: 85%;
+  }
+
+  .about-content p {
+    font-size: 0.95em;
+  }
+
+  .dot-container {
+    height: 300px;
+    width: 300px;
+    top: -318px;
+  }
+
+  /* Skills Section */
+
+  #skills-section h1 {
+    margin-bottom: 0px;
+  }
+
+  #skills-section .vs-skill-info-container {
+    padding: 30px 20px;
+    overflow: hidden;
+  }
+
+  #skills-section .vs-skill-info-container .skills-container img {
+    height: 400px;
+  }
+
+  .skills-container {
+    width: 95%;
+  }
+
+  .skills {
+    width: 70%;
+  }
+
+  .skills div {
+    margin-bottom: 10px;
+  }
+
+  .skill-type {
+    font-size: 0.8em;
+    height: 18px;
+    width: 110px;
+    margin-right: 10px;
+    padding: 2px;
+  }
+
+  .skills .skill-bar {
+    height: 18px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .rank {
+    font-size: 0.8em;
+  }
+
+  /* Changes to Buddy Section */
+
+  .buddy-container > div.quiet {
+    width: 80%;
+  }
+
+  .quiet img {
+    height: 300px;
+  }
+
+  .q-skills {
+    width: 65%;
+  }
+
+  .quiet p.q-description {
+    width: 100%;
+  }
+
+  .quiet > div:nth-of-type(1) {
+    width: 30%;
+  }
+
+  .buddy-container > div:nth-of-type(1) {
+    margin: 10px;
+  }
+
+  .b-info-container-1 > div,
+  .b-info-container-2 > div {
+    width: 50%;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .buddy-img-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buddy-img-container img {
+    height: 250px;
+    width: auto;
+  }
+}
+
+/* Changes for laptops and desktop screens*/
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+  /* Changes to Banner Section */
+
+  .banner-container h1 {
+    font-size: 4em;
+  }
+
+  .banner-container h3 {
+    font-size: 1.5em;
+  }
+
+  .banner-container button {
+    font-size: 1em;
+  }
+
+  .banner-container img {
+    height: 70%;
+  }
+
+  /* Changes to About Section */
+
+  .about-content {
+    width: 80%;
+  }
+
+  .dot-container {
+    top: -400px;
+  }
+
+  /* Changes to Skills Section */
+
+  #skills-section > h1 {
+    margin-bottom: 20px;
+  }
+
+  #skills-section .vs-skill-info-container {
+    padding: 20px;
+  }
+
+  #skills-section .vs-skill-info-container .skills-container img {
+    height: 350px;
+    width: auto;
+  }
+
+  .skills-container {
+    width: 70%;
+  }
+
+  .skills div {
+    margin-bottom: 15px;
+  }
+
+  /* Changes to Buddy Section */
+
+  .quiet img {
+    height: 300px;
+  }
+
+  .buddy-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buddy-img-container img {
+    height: 300px;
+    width: auto;
   }
 }

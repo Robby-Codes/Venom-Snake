@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import "./home.css";
 import homevideoloop from "../../assets/hploop.mp4";
 
+// framer motion transition animations for HomePage
 const hpVariants = {
   hidden: {
     x: "-100%",
@@ -23,6 +24,7 @@ const hpVariants = {
   },
 };
 
+// Main hompage component
 const HomePage = () => {
   return (
     <motion.div
@@ -38,6 +40,7 @@ const HomePage = () => {
   );
 };
 
+// Homepage heading and background video
 const Menu = () => {
   return (
     <div className="homepage-container">
@@ -60,6 +63,7 @@ const Menu = () => {
   );
 };
 
+// Homepage animated cover page
 const Cover = () => {
   return <div className="cover-container"></div>;
 };
