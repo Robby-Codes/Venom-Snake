@@ -929,18 +929,18 @@
   /* Changes to About Section */
 
   .about-content {
-    font-size: 0.85em;
     width: 85%;
+    padding: 10px;
   }
 
   .about-content p {
-    font-size: 0.95em;
+    font-size: 0.84em;
   }
 
   .dot-container {
     height: 300px;
     width: 300px;
-    top: -318px;
+    top: -320px;
   }
 
   /* Skills Section */
@@ -960,6 +960,10 @@
 
   .skills-container {
     width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .skills {
@@ -1058,7 +1062,11 @@
   /* Changes to About Section */
 
   .about-content {
-    width: 80%;
+    width: 70%;
+  }
+
+  .about-content p {
+    font-size: 1em;
   }
 
   .dot-container {
@@ -1072,6 +1080,7 @@
   }
 
   #skills-section .vs-skill-info-container {
+    width: 70%;
     padding: 20px;
   }
 
@@ -1082,6 +1091,10 @@
 
   .skills-container {
     width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .skills div {
@@ -1092,6 +1105,10 @@
 
   .quiet img {
     height: 300px;
+  }
+
+  .buddy-container {
+    width: 70%;
   }
 
   .buddy-img-container {

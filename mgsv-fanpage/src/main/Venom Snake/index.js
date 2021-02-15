@@ -245,7 +245,7 @@ const FieldBuddy = () => {
   return (
     <>
       <section id="field-buddy-section">
-        <h1>BUDDY</h1>
+        <h1>Buddy</h1>
         <div className="buddy-container">
           <Quiet />
           <div className="b-info-container-1">
