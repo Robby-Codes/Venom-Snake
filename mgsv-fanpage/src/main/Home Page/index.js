@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./home.css";
 import homevideoloop from "../../assets/hploop.mp4";
 

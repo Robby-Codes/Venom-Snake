@@ -1,22 +1,8 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { images } from "../other/images";
 import "./venomsnake.css";
-import vs_img from "../../assets/VSProfile.png";
-import dots_img from "../../assets/dots.jpg";
-import vs_img_2 from "../../assets/vsnake.png";
-import quiet_img from "../../assets/quiet.png";
-import d_dog from "../../assets/d-dog.png";
-import d_horse from "../../assets/d-horse.png";
-import d_walker from "../../assets/d-walker.png";
-import pequod from "../../assets/pequod.png";
 import "./skillsfunc";
 import "./otheranimations";
 
@@ -110,7 +96,7 @@ const MainHeading = () => {
             ABOUT
           </button>
         </div>
-        <img src={vs_img} alt="Profile Image of Venom Snake" />
+        <img src={images.vs_img} alt="Profile Image of Venom Snake" />
       </div>
     </section>
   );
@@ -164,7 +150,7 @@ const AboutVenomSnake = () => {
         <p>- Venom Snake</p>
       </div>
       <div className="dot-container">
-        <img src={dots_img} />
+        <img src={images.dots_img} />
       </div>
     </section>
   );
@@ -183,7 +169,7 @@ const VenomSnakeSkills = () => {
         </p>
         <div className="skills-container">
           <img
-            src={vs_img_2}
+            src={images.vs_img_2}
             alt="image of Diamond Dog's commander and chief, Venom Snake"
           />
           <div className="skills">
@@ -250,21 +236,21 @@ const FieldBuddy = () => {
           <Quiet />
           <div className="b-info-container-1">
             <OtherFieldBuddies
-              buddy_image={d_dog}
+              buddy_image={images.d_dog}
               buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
             />
             <OtherFieldBuddies
-              buddy_image={d_horse}
+              buddy_image={images.d_horse}
               buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
             />
           </div>
           <div className="b-info-container-2">
             <OtherFieldBuddies
-              buddy_image={d_walker}
+              buddy_image={images.d_walker}
               buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
             />
             <OtherFieldBuddies
-              buddy_image={pequod}
+              buddy_image={images.pequod}
               buddy_info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt corrupti illo perspiciatis, quis assumenda tenetur nam rerum, atque nesciunt exercitationem, sapiente neque qui facilis repudiandae illum pariatur a expedita?"
             />
           </div>
@@ -280,7 +266,7 @@ const Quiet = () => {
   return (
     <div className="quiet">
       <div>
-        <img src={quiet_img} alt="image of field operative 'Quiet'" />
+        <img src={images.quiet_img} alt="image of field operative 'Quiet'" />
       </div>
       <div className="q-skills">
         <div>
