@@ -1,4 +1,5 @@
 // Importing all site images
+import homebg from "../../assets/homebg.jpg";
 import vs_img from "../../assets/VSProfile.png";
 import vs_img_2 from "../../assets/vsnake.png";
 import dots_img from "../../assets/dots.jpg";
@@ -10,6 +11,7 @@ import pequod from "../../assets/pequod.png";
 
 // Exporting object with all site images to be used elsewhere
 export const images = {
+  homebg,
   vs_img,
   vs_img_2,
   dots_img,

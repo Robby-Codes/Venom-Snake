@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./home.css";
 import homevideoloop from "../../assets/hploop.mp4";
+import { images } from "../other/images";
 
 // framer motion transition animations for HomePage
 const hpVariants = {
@@ -38,7 +39,7 @@ const Menu = () => {
   return (
     <div className="homepage-container">
       <div className="video-container">
-        <video autoPlay loop>
+        <video autoPlay loop muted playsInline poster={images.homebg}>
           <source src={homevideoloop} type="video/mp4" />
           Sorry, Your Browser Cannot Play This Video
         </video>
