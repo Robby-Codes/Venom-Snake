@@ -24,6 +24,7 @@
   padding: 0 5%;
   position: fixed;
   z-index: 99;
+  overflow: hidden;
 }
 
 .nav-container {
@@ -434,6 +435,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 /* Changing sizes for phone users (Portrait View) */
@@ -450,6 +452,10 @@
   }
 
   /* Banner Section Changes */
+
+  #banner-section {
+    overflow: hidden;
+  }
 
   .banner-container {
     display: flex;
@@ -672,7 +678,7 @@
 }
 
 /* Changing sizes for phone users (Landscape View) */
-@media screen and (min-width: 501px) and (max-width: 764px) {
+@media screen and (min-width: 501px) and (max-width: 916px) {
   /* Navigation Section Changes */
 
   .nav-container > a {
@@ -909,7 +915,7 @@
 }
 
 /* Changes for intermediate screen sizes*/
-@media screen and (min-width: 765px) and (max-width: 1199px) {
+@media screen and (min-width: 917px) and (max-width: 1199px) {
   /* Changes to navbar */
 
   .navigation {
